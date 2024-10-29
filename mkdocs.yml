@@ -1,0 +1,53 @@
+site_name: Giulia impara Mkdocs
+
+theme:
+  name: material
+  language: it
+  logo: assets/pink_flower.png
+  site_url:  http://127.0.0.1:8000/
+  palette:
+    scheme: default
+    primary: pink
+  font:
+    text: Helvetica
+  theme:
+    features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.secttions
+    - navigation.footer
+
+
+nav:
+  - Imparando: Imparando.md
+  - Capendo: Capendo.md
+  - Help: Help.md
+
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+plugins:
+  - glightbox
+
+
+extra:
+  consent:
+    title: Cookies impossibili da rifiutare
+    description: >- 
+      Alfredo direbbe di non accettarli, però devi per forza
+
+    cookies:
+      analytics:
+        name: Le tue abitudini
+        checked: false
+      analytics:
+        name: La tua vita
+        checked: false
+
+  generator: false
