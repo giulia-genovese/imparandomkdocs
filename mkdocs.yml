@@ -6,12 +6,27 @@ theme:
   logo: assets/pink_flower.png
   site_url:  http://127.0.0.1:8000/
   palette:
-    scheme: default
-    primary: pink
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      primary: pink
+      accent: amber
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: deep purple
+      accent: teal
+
+  
   font:
     text: Helvetica
-  theme:
-    features:
+  
+  features:
     - navigation.instant
     - navigation.instant.progress
     - navigation.instant.preview
@@ -20,9 +35,12 @@ theme:
     - navigation.tabs.sticky
     - navigation.secttions
     - navigation.footer
-
+    - search.suggest
+    - search.highlight
+    - search.share
 
 nav:
+  - Bio: index.md
   - Imparando: Imparando.md
   - Capendo: Capendo.md
   - Help: Help.md
@@ -34,20 +52,28 @@ markdown_extensions:
 
 plugins:
   - glightbox
+  - search
+  - tags
 
 
 extra:
+  social:
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/ops.giuly/
   consent:
     title: Cookies impossibili da rifiutare
     description: >- 
       Alfredo direbbe di non accettarli, però devi per forza
-
     cookies:
       analytics:
         name: Le tue abitudini
         checked: false
-      analytics:
+      latuavita:
         name: La tua vita
         checked: false
+      aiuto:
+        name: Aiuto
+        checked: false
+
 
   generator: false

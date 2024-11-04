@@ -10,7 +10,7 @@
 
 **5.** Chiedi a Carmine
 
-**6.** Usa questo sito, no veramente: https://squidfunk.github.io/mkdocs-material/creating-your-site/
+**6.** Usa questo sito, no veramente: [clicca qui](https://squidfunk.github.io/mkdocs-material/creating-your-site/)
 
 **Ora hai creato il tuo sito, fortissimǝ!**
 <figure markdown="span">
