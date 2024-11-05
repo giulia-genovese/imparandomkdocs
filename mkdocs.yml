@@ -42,7 +42,7 @@ theme:
 nav:
   - Bio: index.md
   - Imparando: Imparando.md
-  - Capendo: Capendo.md
+  - Sperimentazione: Sperimentazione.md
   - Help: Help.md
 
 
@@ -74,6 +74,4 @@ extra:
       aiuto:
         name: Aiuto
         checked: false
-
-
   generator: false
