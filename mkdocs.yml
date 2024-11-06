@@ -43,8 +43,8 @@ nav:
   - Bio: index.md
   - Tutorial: Tutorial.md
   - Sperimentazione: Sperimentazione.md
+  - Game time: Game_time.md
   - Help: Help.md
-
 
 markdown_extensions:
   - attr_list
@@ -75,3 +75,5 @@ extra:
         name: Aiuto
         checked: false
   generator: false
+
+  
