@@ -41,7 +41,7 @@ theme:
 
 nav:
   - Bio: index.md
-  - Imparando: Imparando.md
+  - Tutorial: Tutorial.md
   - Sperimentazione: Sperimentazione.md
   - Help: Help.md
 

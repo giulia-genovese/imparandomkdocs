@@ -4,13 +4,11 @@
 
 **2.** Guarda il tutorial senza capire niente
 
-**3.** Chiedi a Fernanda
+**3.** Chiedi a Rossana a chi chiedere
 
-**4.** Chiedi a Vincenzo
+**4.** Chiedi a Fernanda, Vincenzo, Carmine e Samuele
 
-**5.** Chiedi a Carmine
-
-**6.** Usa questo sito, no veramente: [clicca qui](https://squidfunk.github.io/mkdocs-material/creating-your-site/)
+**5.** Usa questo sito, no veramente: [clicca qui](https://squidfunk.github.io/mkdocs-material/creating-your-site/)
 
 **Ora hai creato il tuo sito, fortissimǝ!**
 <figure markdown="span">
