@@ -45,7 +45,6 @@ nav:
   - Sperimentazione: Sperimentazione.md
   - Help: Help.md
 
-
 markdown_extensions:
   - attr_list
   - md_in_html
