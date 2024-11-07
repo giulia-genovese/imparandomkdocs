@@ -5,6 +5,9 @@
 <div style="position: relative; height: 300px; width: 400px; margin: 50px auto; overflow: hidden; border: 1px solid #ccc;" id="ball-container">
     <div class="ball" onclick="duplicateBall(this)"></div>
 </div>
+<div id="counter" style="text-align: center; font-size: 18px; margin-top: 10px;">
+    Conto delle palline: <span id="ball-count">1</span>
+</div>
 
 <style>
     .ball {
@@ -40,6 +43,12 @@
 </style>
 
 <script>
+    let ballCount = 1; // Start with 1 since the initial ball is already in place
+
+    function updateCounter() {
+        document.getElementById('ball-count').innerText = ballCount;
+    }
+
     function duplicateBall(originalBall) {
         // Clone the ball element
         const newBall = originalBall.cloneNode(true);
@@ -62,5 +71,9 @@
 
         // Add the same onclick function to the new ball so it can duplicate itself
         newBall.onclick = function() { duplicateBall(newBall); };
+
+        // Update the counter
+        ballCount++;
+        updateCounter();
     }
 </script>
