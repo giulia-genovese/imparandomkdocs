@@ -3,26 +3,25 @@ site_name: Giulia impara Mkdocs
 theme:
   name: material
   language: it
-  logo: assets/pink_flower.png
+  logo: assets/logo_rosso.svg
   site_url:  http://127.0.0.1:8000/
   palette:
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/weather-sunny
         name: Switch to dark mode
-      primary: pink
-      accent: amber
+      primary: amber
+      accent: pink
 
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-night
         name: Switch to light mode
       primary: deep purple
       accent: teal
 
-  
   font:
     text: Helvetica
   
@@ -34,7 +33,6 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.secttions
-    - navigation.footer
     - search.suggest
     - search.highlight
     - search.share
@@ -45,7 +43,6 @@ nav:
   - Sperimentazione: Sperimentazione.md
   - Game time: Game_time.md
   - Help: Help.md
-  - Prove: provacose.md
 
 markdown_extensions:
   - attr_list
@@ -77,4 +74,8 @@ extra:
         checked: false
   generator: false
 
-  
+  extra_css:
+  - 'styles.css'  # docs/assets/styles.css
+
+extra_javascript:
+  - 'scripts.js'  # docs/assets/scripts.js
