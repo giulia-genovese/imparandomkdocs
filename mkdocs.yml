@@ -74,8 +74,8 @@ extra:
         checked: false
   generator: false
 
-  extra_css:
-  - 'styles.css'  # docs/assets/styles.css
+extra_css:
+  - assets/styles.css
 
 extra_javascript:
-  - 'scripts.js'  # docs/assets/scripts.js
+  - assets/scripts.js
