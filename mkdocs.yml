@@ -45,6 +45,7 @@ nav:
   - Sperimentazione: Sperimentazione.md
   - Game time: Game_time.md
   - Help: Help.md
+  - Prove: provacose.md
 
 markdown_extensions:
   - attr_list
