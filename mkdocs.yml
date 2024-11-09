@@ -4,7 +4,7 @@ theme:
   name: material
   language: it
   logo: assets/logo_rosso.svg
-  site_url:  http://127.0.0.1:8000/
+  site_url: https://giulia-genovese.github.io/imparandomkdocs/
   palette:
     # Palette toggle for light mode
     - scheme: default
