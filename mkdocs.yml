@@ -75,7 +75,7 @@ extra:
   generator: false
 
 extra_css:
-  - assets/styles.css
+  - assets/style.css
 
 extra_javascript:
-  - assets/scripts.js
+  - assets/cursor.js
