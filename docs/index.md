@@ -1,23 +1,20 @@
 
-<div class="your-custom-html">
-  <!-- HTML content goes here -->
-</div>
-
-<!-- HTML for custom cursor element -->
-<div class="cursor"></div>
-
-
-
-<p>
-
-
 <div align="center">
-Ciao sono <strong>Giulia Genovese</strong>, ho 19 anni, 
-sono al secondo anno di NTA e questa è la mia biografia! 
-Per ora sto sperimentando con Markdown e un po' di HTML, vediamo come va :)
+Mi chiamo <strong>Giulia Genovese</strong> e sono nata a Napoli nel dicembre del 2004. L’arte è sempre stata parte della mia vita, da piccola osservavo mio padre realizzare le locandine per i suoi locali: è stato il mio primo incontro con Photoshop.
 <p>
-<div align="center">
+<img src="assets/foto_al_bar.jpg" width="500" height="100">
+<p>
+Da ragazzina ho cominciato a sperimentare, realizzando grafiche e video, e durante le superiori mi occupavo delle copertine del giornalino del mio liceo, dove, nel 2023, ho conseguito la maturità classica. 
+<p>
 <img src="assets/selfiepazzeskogirato.jpeg" width="500" height="100">
+<p>
+Attualmente frequento il secondo anno del corso di Nuove Tecnologie dell’Arte presso l’Accademia di Belle Arti di Napoli, dove la mia ricerca artistica si sta sviluppando sempre più verso l’intermedialità, esplorando l'integrazione di diverse tecniche per creare opere d’arte.
+
+<p>
+Oltre all'arte, coltivo diverse altre passioni: amo studiare, specialmente per perfezionare il mio inglese, leggere, e mi interessano il cinema e la moda. Nella vita, come nell’arte, ho un approccio massimalista
+<p>
+
+
 
 <div align="center">
 

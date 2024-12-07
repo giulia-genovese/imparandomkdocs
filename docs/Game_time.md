@@ -1,19 +1,3 @@
-# **Game time!**
-## Clicca sulla pallina e vedi cosa succede
-(puoi farlo quante volte vuoi)
-
-
-<div class="your-custom-html">
-  <!-- HTML content goes here -->
-</div>
-
-
-
-
-
-
-
-
 
 
 <div style="position: relative; height: 300px; width: 400px; margin: 50px auto; overflow: hidden; border: 1px solid #ccc;" id="ball-container">

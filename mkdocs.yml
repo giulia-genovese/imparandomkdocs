@@ -74,8 +74,3 @@ extra:
         checked: false
   generator: false
 
-extra_css:
-  - assets/style.css
-
-extra_javascript:
-  - assets/cursor.js
