@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 let trail = [];
 
 // Numero di immagini da tenere nella scia
-let trailLength = 10; 
+let trailLength = 20; 
 
 // Funzione che crea l'effetto della scia
 function createCursorTrail(event) {
