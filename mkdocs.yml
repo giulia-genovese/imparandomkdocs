@@ -39,6 +39,7 @@ theme:
 
 nav:
   - Bio: index.md
+  - Entanglement: entanglement.md
   - Tutorial: Tutorial.md
   - Sperimentazione: Sperimentazione.md
   - Game time: Game_time.md
