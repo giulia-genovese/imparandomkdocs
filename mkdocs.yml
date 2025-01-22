@@ -46,8 +46,6 @@ nav:
   - Game time: Game_time.md
   - Help: Help.md
 
-
-
 markdown_extensions:
   - attr_list
   - md_in_html
