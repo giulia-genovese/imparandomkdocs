@@ -39,11 +39,14 @@ theme:
 
 nav:
   - Bio: index.md
-  - Multiculturalismo: Multiculturalismo.md
+  - Multiculturalismo:
+    - blog/index.md
   - Tutorial: Tutorial.md
   - Sperimentazione: Sperimentazione.md
   - Game time: Game_time.md
   - Help: Help.md
+
+
 
 markdown_extensions:
   - attr_list
@@ -53,6 +56,7 @@ plugins:
   - glightbox
   - search
   - tags
+  - blog
 
 
 extra:
