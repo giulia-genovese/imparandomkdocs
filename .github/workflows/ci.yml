@@ -20,17 +20,25 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install --upgrade pip  # Ensure the latest pip
+          pip install --upgrade pip
           pip install mkdocs mkdocs-material mkdocs-glightbox
 
       - name: Verify MkDocs Installation
         run: |
-          mkdocs --version  # Ensure MkDocs is installed correctly
+          mkdocs --version
 
-      - name: Build MkDocs site
+      - name: Debug MkDocs Build
         run: |
-          mkdocs build --verbose  # Run mkdocs build with verbose output for debugging
-          
+          echo "Running mkdocs build..."
+          mkdocs build --verbose --clean  # Use --clean to ensure it builds from scratch
+
+      - name: Check if site exists
+        run: |
+          echo "Listing contents of current directory"
+          ls -l  # Check if ./site exists directly
+          echo "Listing contents of ./site (if it exists)"
+          ls -l ./site || echo "No site directory found"
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
@@ -61,6 +69,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
 
 
 
