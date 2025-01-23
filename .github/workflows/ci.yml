@@ -36,14 +36,14 @@ jobs:
         run: |
           echo "Listing contents of current directory"
           ls -l  # Check if ./site exists directly
-          echo "Listing contents of ./site (if it exists)"
-          ls -l ./site || echo "No site directory found"
+          echo "Listing contents of site (if it exists)"
+          ls -l site || echo "No site directory found"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: ./site
+          path: site
 
   deploy:
     if: github.ref == 'refs/heads/main'
@@ -64,7 +64,7 @@ jobs:
           name: github-pages
 
       - name: Debug downloaded artifact
-        run: ls -l ./site  # Ensure the downloaded artifact is correctly extracted
+        run: ls -l site  # Ensure the downloaded artifact is correctly extracted
 
       - name: Deploy to GitHub Pages
         id: deployment
