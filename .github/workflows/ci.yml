@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest  # This sets the runner to macOS instead of ubuntu
 
     steps:
       - name: Checkout repository
@@ -25,29 +25,38 @@ jobs:
 
       - name: Verify MkDocs Installation
         run: |
-          mkdocs --version
+          mkdocs --version  # Check if MkDocs is installed correctly
+
+      - name: Check if mkdocs.yml exists
+        run: |
+          if [ -f mkdocs.yml ]; then
+            echo "Found mkdocs.yml";
+          else
+            echo "No mkdocs.yml found. Please check your repository setup!";
+            exit 1;
+          fi
 
       - name: Debug MkDocs Build
         run: |
           echo "Running mkdocs build..."
-          mkdocs build --verbose --clean  # Use --clean to ensure it builds from scratch
+          mkdocs build --verbose --clean  # Run build to create the site directory
 
-      - name: Check if site exists
+      - name: Check directory existence
         run: |
-          echo "Listing contents of current directory"
-          ls -l  # Check if ./site exists directly
-          echo "Listing contents of site (if it exists)"
-          ls -l site || echo "No site directory found"
+          echo "Listing current directory contents"
+          ls -l  # List contents of the current directory to confirm we are in the right place
+          echo "Checking if ./site exists"
+          ls -l ./site || echo "No ./site directory found"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: site
+          path: ./site
 
   deploy:
     if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: macos-latest  # This ensures the deploy runs on macOS too
     needs: build
 
     permissions:
@@ -64,11 +73,15 @@ jobs:
           name: github-pages
 
       - name: Debug downloaded artifact
-        run: ls -l site  # Ensure the downloaded artifact is correctly extracted
+        run: |
+          echo "Listing downloaded artifact contents"
+          ls -l ./site  # Ensure the downloaded artifact is extracted correctly
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
+    
 
 
 
