@@ -20,20 +20,24 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material
-          pip install mkdocs-glightbox
+          pip install --upgrade pip  # Ensure the latest pip
+          pip install mkdocs mkdocs-material mkdocs-glightbox
+
+      - name: Verify MkDocs Installation
+        run: |
+          mkdocs --version  # Ensure MkDocs is installed correctly
 
       - name: Build MkDocs site
         run: |
-          mkdocs build
-
+          mkdocs build --verbose  # Run mkdocs build with verbose output for debugging
+          
       - name: Debug site directory
         run: ls -l ./site  # Ensure the site directory is populated
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4  # Use v4 for artifact upload
+        uses: actions/upload-artifact@v4
         with:
-          name: github-pages  # Ensure the name matches deploy-pages
+          name: github-pages
           path: ./site
 
   deploy:
@@ -50,9 +54,9 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v4  # Updated to v4
+        uses: actions/download-artifact@v4
         with:
-          name: github-pages  # Match the artifact name exactly
+          name: github-pages
 
       - name: Debug downloaded artifact
         run: ls -l ./site  # Ensure the downloaded artifact is correctly extracted
@@ -60,5 +64,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
 
 
