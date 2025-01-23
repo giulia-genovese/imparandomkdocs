@@ -42,7 +42,6 @@ nav:
   - Multiculturalismo:
     - blog/index.md
   - Tutorial: Tutorial.md
-  - Sperimentazione: Sperimentazione.md
   - Game time: Game_time.md
   - Help: Help.md
 
@@ -55,7 +54,6 @@ plugins:
   - search
   - tags
   - blog
-
 
 extra:
   social:
