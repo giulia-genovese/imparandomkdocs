@@ -1,0 +1,14 @@
+.cursor-trail {
+    position: absolute;
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    background-image: url('star_grey.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    opacity: 0.7;
+    pointer-events: none;
+    transition: transform 0.1s ease-out
+  }
