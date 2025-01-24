@@ -7,11 +7,11 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -20,38 +20,23 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install --upgrade pip
-          pip install mkdocs mkdocs-material mkdocs-glightbox
-
-      - name: Check if mkdocs.yml exists
-        run: |
-          if [ -f mkdocs.yml ]; then
-            echo "Found mkdocs.yml";
-          else
-            echo "No mkdocs.yml found. Please check your repository setup!";
-            exit 1;
-          fi
+          pip install mkdocs mkdocs-material
 
       - name: Build MkDocs site
         run: |
-          echo "Running mkdocs build..."
-          mkdocs build --verbose --clean  # Run build to create the site directory
+          mkdocs build
 
-      - name: Check if site folder exists after build
-        run: |
-          echo "Listing contents after mkdocs build"
-          ls -l  # List the current directory contents to verify if ./site exists
-          ls -l ./site || echo "No ./site directory found after build!"
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: github-pages
           path: ./site
 
   deploy:
     if: github.ref == 'refs/heads/main'
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     needs: build
 
     permissions:
@@ -60,25 +45,9 @@ jobs:
 
     environment:
       name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: github-pages
-
-      - name: Debug downloaded artifact
-        run: |
-          echo "Listing downloaded artifact contents"
-          ls -l ./site  # Ensure the downloaded artifact is extracted correctly
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-
-
-    
-
-
-
-
