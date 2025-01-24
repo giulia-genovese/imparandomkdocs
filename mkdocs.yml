@@ -50,10 +50,10 @@ markdown_extensions:
   - md_in_html
 
 plugins:
-  - glightbox
   - search
   - tags
   - blog
+  - glightbox
 
 extra:
   social:
