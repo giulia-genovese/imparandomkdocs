@@ -53,21 +53,6 @@ plugins:
   - search
   - tags
   - blog
-  - glightbox:
-      touchNavigation: true
-      loop: false
-      effect: zoom
-      slide_effect: slide
-      width: 100%
-      height: auto
-      zoomable: true
-      draggable: true
-      skip_classes:
-        - glightbox-thumb
-      auto_caption: false
-      caption_position: bottom
-      background: white
-      shadow: true
 
 extra:
   social:
