@@ -40,7 +40,15 @@ theme:
 nav:
   - Bio: index.md
   - Multiculturalismo:
-    - blog/index.md
+      - Overview: blog-1/index.md
+      - Posts:
+          - First Post: blog-1/posts/myfirst.md
+          - Second Post: blog-1/posts/mysecond.md
+          - Third Post: blog-1/posts/mythird.md
+  - Manifesta:
+      - Overview: blog-2/index.md
+      - Posts:
+          - First Post: blog-2/posts/mioprimo.md
   - Tutorial: Tutorial.md
   - Game time: Game_time.md
   - Help: Help.md
@@ -52,7 +60,10 @@ markdown_extensions:
 plugins:
   - search
   - tags
-  - blog
+  - blog:
+      blog_dir: blog-1
+  - blog:
+      blog_dir: blog-2
 
 extra:
   social:
