@@ -6,12 +6,13 @@ on:
       - main
 
 jobs:
+  
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout repository  
+        uses: actions/checkout@v4 
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -26,11 +27,11 @@ jobs:
         run: |
           mkdocs build
 
-      - name: Setup Pages
+      - name: Setup Pages  
         uses: actions/configure-pages@v4
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Upload artifact  
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./site
 
@@ -48,6 +49,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+      - name: Deploy to GitHub Pages  
+        id: deployment  
+        uses: actions/deploy-pages@v4
