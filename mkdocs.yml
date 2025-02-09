@@ -39,13 +39,13 @@ theme:
 
 nav:
   - Bio: index.md
-  - Multiculturalismo:
+  - Piazza Garibaldi:
       - Overview: blog-1/index.md
       - Posts:
           - First Post: blog-1/posts/myfirst.md
           - Second Post: blog-1/posts/mysecond.md
           - Third Post: blog-1/posts/mythird.md
-  - Manifesta:
+  - Laboratorio:
       - Overview: blog-2/index.md
       - Posts:
           - First Post: blog-2/posts/mioprimo.md
