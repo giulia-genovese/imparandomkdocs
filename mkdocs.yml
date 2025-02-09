@@ -50,6 +50,9 @@ nav:
       - Posts:
           - First Post: blog-2/posts/mioprimo.md
           - Second Post: blog-2/posts/miosecondo.md
+          - Third Post: blog-2/posts/mioterzo.md
+          - Fourth Post: blog-2/posts/mioquarto.md
+          - Fifth Post: blog-2/posts/mioquinto.md
   - Tutorial: Tutorial.md
   - Game time: Game_time.md
   - Help: Help.md

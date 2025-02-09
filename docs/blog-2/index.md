@@ -1,2 +1,2 @@
-# Manifesta!
-In laboratorio abbiamo sentito la necessità di riformulare il nostro Manifesto, ecco come sta andando...
+# Manifesta
+Questo sarà un MANIFESTO IDENTITARIO CHE SCONFINA I CONFINI, che rende i punti cardinali scardinabili.
