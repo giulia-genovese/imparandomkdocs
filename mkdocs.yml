@@ -49,6 +49,7 @@ nav:
       - Overview: blog-2/index.md
       - Posts:
           - First Post: blog-2/posts/mioprimo.md
+          - Second Post: blog-2/posts/miosecondo.md
   - Tutorial: Tutorial.md
   - Game time: Game_time.md
   - Help: Help.md
