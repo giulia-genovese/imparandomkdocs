@@ -9,6 +9,5 @@ Il Laboratorio di NTA muta insieme alle persone che lo attraversano,
 così i suoi strumenti, le sue modalità, e i suoi termini. Abbiamo sentito la necessità 
 di **reinventare** il Manifesto, così che si aggiornasse di pari passo con il flusso del
 laboratorio. La nostra urgenza è trovare nuove parole che ci rappresentino, attingendo 
-dalle nostre esperienze in laboratorio, del quale il gruppo Manifesta vuole essere l'orecchio. 
-<div align="center">
-<img src="manifesta_nel_diffuso.jpg" width="500" height="100">
+dalle nostre esperienze in laboratorio, del quale il gruppo Manifesta vuole essere l'orecchio.
+![primo](../posts/manifesta_nel_diffuso.jpg){width="500px" height="100px" style="display: block; margin: 0 auto;"}

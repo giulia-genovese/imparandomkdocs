@@ -11,5 +11,4 @@ Questa scelta è stata dettata da due motivi principali.
  
 **2.** "Manifesta" come **verbo** all'imperativo, come azione attiva da compiere per generare un cambiamento.
 
-<div align="center">
-<img src="manifesta_origine.jpg" width="500" height="100">
+![primo](../posts/manifesta_origine.jpg){width="500px" height="100px" style="display: block; margin: 0 auto;"}
